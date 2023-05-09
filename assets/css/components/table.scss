@@ -1,0 +1,32 @@
+// tabulka
+.table {
+  width: 100%;
+  margin: 30px 0;
+  border-top: 1px solid $color_main;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 1px solid $color_main;
+  th,
+  td {
+    padding: 15px 10px;
+    line-height: 1.2;
+    text-align: left;
+    border-top: 0;
+    border-right: 1px solid $color_main;
+    border-bottom: 1px solid $color_main;
+    border-left: 0;
+    transition: $transition;
+  }
+
+  // hlavička tabulky
+  th {
+    color: $color_white;
+    background-color: $color_main;
+  }
+}
+
+// obalový element (pro respo)
+.table__wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+}

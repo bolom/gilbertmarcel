@@ -1,0 +1,36 @@
+.info {
+  position: relative;
+  z-index: $index_base;
+  display: flex;
+  overflow: hidden;
+  max-width: 1350px;
+}
+.info__wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-left: auto;
+  @media (min-width: $mqsm) {
+    gap: 10px 26px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 20px);
+    width: 100vw;
+    height: 2px;
+    background: currentColor;
+    transform: translate(0, -50%);
+    @media (min-width: $mqxs) {
+      right: calc(100% + 34px);
+    }
+  }
+}
+.info__block {
+  @media (min-width: $mqsm) {
+    flex: 0 0 auto;
+    min-width: 198px;
+  }
+}

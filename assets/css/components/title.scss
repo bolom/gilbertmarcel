@@ -1,0 +1,53 @@
+.title {
+  position: relative;
+  color: $color_main;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: calc(78 / 60);
+  text-transform: uppercase;
+  @media (min-width: $mqsm) {
+    font-size: 60px;
+  }
+}
+.title--xxl {
+  font-size: 220px;
+  font-size: clamp(2rem, 15vw, 220px);
+  font-weight: 400;
+  line-height: calc(286/220);
+}
+.title--lg {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: calc(130/100);
+  @media (min-width: $mqsm) {
+    font-size: 100px;
+  }
+}
+.title--md {
+  font-size: 36px;
+  @media (min-width: $mqsm) {
+    font-size: 48px;
+  }
+}
+.title--x {
+  padding-left: 50px;
+  @media (min-width: $mqsm) {
+    padding-left: 70px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 24px;
+    height: 23px;
+    background: url('#{$imgPath}/icons/icon-x.svg') no-repeat center center;
+    background-size: contain;
+    transform: translate(0, -50%);
+    @media (min-width: $mqsm) {
+      width: 35px;
+      height: 34px;
+    }
+  }
+}

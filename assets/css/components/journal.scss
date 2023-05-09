@@ -1,0 +1,35 @@
+.journal {
+  ul,
+  ol {
+    max-width: 574px;
+    li {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.journal__hero-image {
+  position: relative;
+  max-width: 100%;
+  min-height: 270px;
+  margin: 32px 0;
+
+  aspect-ratio: 998/371;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.journal__block {
+  margin-bottom: 48px;
+  @media (min-width: $mqsm) {
+    margin-bottom: 64px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

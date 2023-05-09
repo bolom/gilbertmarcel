@@ -1,0 +1,14 @@
+.stroke-animation {
+  stroke: $color_main_dark;
+  &.is-show path {
+    animation: strokeOffset 1.5s linear forwards 500ms;
+  }
+  &.is-fastest path {
+    animation-duration: 0.75s;
+  }
+}
+@keyframes strokeOffset {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,53 @@
+@keyframes showRight {
+  0% {
+    opacity: 0;
+    transform: translate(-50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes showLeft {
+  0% {
+    opacity: 0;
+    transform: translate(50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes showDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveSlideshow {
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@keyframes moveSlideshowReverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: 0;
+  }
+}

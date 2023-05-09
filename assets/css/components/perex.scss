@@ -1,0 +1,14 @@
+.perex {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: calc(33/24);
+  @media (min-width: $mqsm) {
+    font-size: 20px;
+  }
+  @media (min-width: $mqmd) {
+    font-size: 22px;
+  }
+  @media (min-width: $mqlg) {
+    font-size: 24px;
+  }
+}
