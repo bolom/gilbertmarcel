@@ -5,6 +5,21 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="build/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= image_url 'favicon/favicon-32x32.png' %>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= image_url 'favicon/favicon-16x16.png' %>">
+    <link rel="manifest" href="<%= asset_url 'favicon/site.webmanifest' %>">
+    <link rel="mask-icon" href="<%= image_url 'favicon/safari-pinned-tab.svg' %>" color="#000000">
+    <link rel="shortcut icon" href="<%= image_url 'favicon/favicon.ico' %>">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="<%= asset_url 'favicon/browserconfig.xml' %>">
+    <meta name="theme-color" content="#ffffff">
+
     <script>spritePath="<%= image_url('symbol/icons.svg') %>"</script>
   </head>
   <body>

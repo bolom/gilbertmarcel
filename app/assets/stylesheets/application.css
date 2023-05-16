@@ -3426,7 +3426,7 @@ a.journal-item--hero .journal-item__date {
   left: 0;
   width: 24px;
   height: 23px;
-  background: url("../img/icons/icon-x.svg") no-repeat center center;
+  background: image-url("icons/icon-x.svg") no-repeat center center;
   background-size: contain;
   transform: translate(0, -50%);
 }
