@@ -5,8 +5,6 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "application" %>
-
     <script>spritePath="<%= image_url('symbol/icons.svg') %>"</script>
   </head>
   <body>
@@ -31,5 +29,6 @@
     <%= yield %>
     <%= render 'default/shared/footer' %>
 
+    <script src="/scripts.js?v=2"></script>
   </body>
 </html>
