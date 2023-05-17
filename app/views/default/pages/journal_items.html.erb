@@ -1,0 +1,64 @@
+<main role="main">
+  <div class="back">
+    <article class="container container--lg">
+      <a href="/">Home page</a>
+    </article>
+  </div>
+  <section class="section">
+    <article class="container container--text" role="article">
+      <div class="journal">
+        <h1><%= current_page.title %></h1>
+        <div class="journal__hero-image">
+          <%= image_tag original_url(current_page.content(:journal_image).spina_image) %>
+        </div>
+        <p class="perex">
+          <%= current_page.content(:journal_preview_description).html_safe %>
+        </p>
+        <hr>
+        <div class="journal__block">
+          <%= current_page.content(:journal_description).html_safe %>
+        </div>
+      </div>
+
+    </article>
+  </section>
+  <section class="journal-section">
+    <article class="container" role="article">
+      <h2 data-aos="fade-right" class="title title--md journal-section__title">
+        Read another
+      </h2>
+      <div data-aos="fade-up" class="journal-section__slider">
+        <a href="/journal" class="journal-item journal-item--hero">
+          <div class="journal-item__image">
+            <img src="build/img/journal-1.jpg" alt="">
+            <div class="view">View</div>
+          </div>
+          <div class="journal-item__bottom">
+            <p class="text">This is perex of my article in my journal. Lorem ipsum dolor sit amet consectetuer elit unt muerte vega. sic vic pacem parabelum...</p>
+            <div class="journal-item__date">03/02</div>
+          </div>
+        </a>
+        <a href="/journal" class="journal-item">
+          <div class="journal-item__image">
+            <img src="build/img/journal-2.jpg" alt="">
+            <div class="view">View</div>
+          </div>
+          <div class="journal-item__bottom">
+            <p class="text">This is perex of my article in my journal. Lorem ipsum dolor sit amet consectetuer elit unt muerte vega. sic vic pacem parabelum...</p>
+            <div class="journal-item__date">03/02</div>
+          </div>
+        </a>
+        <a href="/journal" class="journal-item">
+          <div class="journal-item__image">
+            <img src="build/img/journal-3.jpg" alt="">
+            <div class="view">View</div>
+          </div>
+          <div class="journal-item__bottom">
+            <p class="text">This is perex of my article in my journal. Lorem ipsum dolor sit amet consectetuer elit unt muerte vega. sic vic pacem parabelum...</p>
+            <div class="journal-item__date">03/02</div>
+          </div>
+        </a>
+      </div>
+    </article>
+  </section>
+</main>
