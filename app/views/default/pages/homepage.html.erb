@@ -1,0 +1,150 @@
+<main role="main" id="homepage">
+  <section class="portfolio">
+    <article class="container" role="article">
+      <div class="indent">
+        <div class="portfolio__grid">
+          <h2 data-aos="fade-right" class="title title--x portfolio__title">Art</h2>
+          <a data-aos="fade-left" href="<%= image_url('portfolio-1.jpg') %>" class="portfolio-item portfolio-item--text-left">
+            <div class="portfolio-item__image">
+              <%= image_tag 'portfolio-1.jpg', loading: 'lazy', width: 579, title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+              <div class="view">View</div>
+            </div>
+            <div class="portfolio-item__text portfolio-item__text--animation">
+              <p class="text">The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.</p>
+            </div>
+          </a>
+          <a data-aos="fade-right" data-aos-offset="60" href="<%= image_url('portfolio-2.jpg') %>" class="portfolio-item portfolio-item--2">
+            <div class="portfolio-item__image">
+              <%= image_tag 'portfolio-2.jpg', loading: 'lazy', width: 390, title: "The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage." %>
+              <div class="view">View</div>
+            </div>
+            <div class="portfolio-item__text">
+              <p class="text">The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.</p>
+            </div>
+          </a>
+          <a data-aos="fade-up" data-aos-offset="240" href="<%= image_url('portfolio-3.jpg') %>" class="portfolio-item portfolio-item--3">
+            <div class="portfolio-item__image">
+              <%= image_tag 'portfolio-3.jpg', width: 390, title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+              <div class="view">View</div>
+            </div>
+            <div class="portfolio-item__text">
+              <p class="text">The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="gallery">
+    <article class="container" role="article">
+      <div class="indent">
+        <div class="gallery__title">
+          <h2 data-aos="fade-right" class="title title--xxl">Art</h2>
+        </div>
+        <div data-aos="fade-left" class="gallery__wrap">
+          <div class="gallery__slider">
+            <a href="<%= image_url('gallery-1.jpg') %>" class="gallery__slider-item">
+              <%= image_tag 'gallery-1.jpg', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+              <div class="view">View</div>
+            </a>
+            <a href="<%= image_url('gallery-2.jpg') %>" class="gallery__slider-item">
+              <%= image_tag 'gallery-2.jpg', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+              <div class="view">View</div>
+            </a>
+            <a href="<%= image_url('gallery-1.jpg') %>" class="gallery__slider-item">
+              <%= image_tag 'gallery-1.jpg', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+              <div class="view">View</div>
+            </a>
+            <a href=<%= image_url('gallery-2.jpg') %>" class="gallery__slider-item">
+              <%= image_tag 'gallery-2.jpg', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+              <div class="view">View</div>
+            </a>
+            <a href="<%= image_url('gallery-1.jpg') %>" class="gallery__slider-item">
+              <%= image_tag 'gallery-1.jpg', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+              <div class="view">View</div>
+            </a>
+            <a href="<%= image_url('gallery-2.jpg') %>" class="gallery__slider-item">
+              <%= image_tag 'gallery-2.jpg', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+              <div class="view">View</div>
+            </a>
+          </div>
+          <div class="gallery__nav">
+            <div class="gallery__nav-prev">
+              <span class="icon icon--icon-arrow-left">
+                <svg class="icon__svg"><use xlink:href="#icon-arrow-left"></use></svg>
+              </span>
+            </div>
+            <div class="gallery__nav-next">
+              <span class="icon icon--icon-arrow-right">
+                <svg class="icon__svg"><use xlink:href="#icon-arrow-right"></use></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="portfolio-hero">
+    <article class="container" role="article">
+      <div class="indent">
+        <a data-aos="fade-up" href="<%= image_url('portfolio-hero.jpg') %>" class="portfolio-item portfolio-item--hero">
+          <div class="portfolio-item__image">
+            <%= image_tag 'portfolio-hero.jpg', width: 1003, loading: 'lazy', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+            <div class="view">View</div>
+          </div>
+          <div class="portfolio-item__text portfolio-item__text--animation">
+            <p class="text">The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.</p>
+          </div>
+        </a>
+      </div>
+    </article>
+  </section>
+  <section class="journal-section">
+    <article class="container" role="article">
+      <h2 data-aos="fade-right" class="title title--xxl journal-section__title">
+        My journal
+        <svg class="stroke-animation" width="988" height="188" viewBox="0 0 988 188" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 135.807C46.0654 117.86 144.033 75.4553 175.381 49.4116C214.565 16.857 288.663 -17.228 336.205 14.9092C354.346 27.1723 331.211 43.2356 293.752 58.6365C204.661 95.2661 19.8709 195.548 114.947 180.07C125.368 178.374 138.388 175.426 154.396 171.004C290.186 133.497 264.126 203.008 346.233 164.327C414.078 141.279 540.373 82.1888 502.785 30.2127C455.801 -34.7574 836.133 104.782 726.379 149.858C616.625 194.934 837.061 -13.3326 876.803 14.9092C916.545 43.1511 792.491 214.132 889.246 181.995C966.649 156.285 986 74.7318 986 37.1688" stroke="currentColor" stroke-width="3"/></svg>
+      </h2>
+
+      <div data-aos="fade-up" class="journal-section__slider">
+        <% journal_items = Spina::Resource.find_by(name: :journal_items).pages.live %>
+
+        <% journal_items.each do |journal_item| %>
+          <a href="<%= journal_item.materialized_path %>" class="journal-item <%= journal_item.id == journal_items.first.id ? 'journal-item--hero' : '' %>">
+
+            <div class="journal-item__image">
+              <%= image_tag original_url(journal_item.content(:journal_image).spina_image) %>
+              <div class="view">View</div>
+            </div>
+
+            <div class="journal-item__bottom">
+              <p class="text">
+                <%= strip_tags(journal_item.content(:journal_preview_description)).truncate(135) %>
+              </p>
+              <div class="journal-item__date"><%= l journal_item.created_at, format: "%d\/%m" %></div>
+            </div>
+          </a>
+        <% end %>
+      </div>
+    </article>
+  </section>
+</main>
+
+<a href="#" target="_blank" class="click-to-see">
+  <div class="click-to-see__top">
+    <div class="click-to-see__scroll">
+      <span class="title title--lg">Click here to see my instagram</span>
+      <span class="title title--lg">Click here to see my instagram</span>
+      <span class="title title--lg">Click here to see my instagram</span>
+    </div>
+  </div>
+  <div class="click-to-see__bottom">
+    <div class="click-to-see__scroll click-to-see__scroll--reverse">
+      <span class="title title--lg">Click here to see my instagram</span>
+      <span class="title title--lg">Click here to see my instagram</span>
+      <span class="title title--lg">Click here to see my instagram</span>
+    </div>
+  </div>
+</a>
+
+

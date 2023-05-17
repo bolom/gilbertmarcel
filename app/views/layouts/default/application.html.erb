@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= current_spina_account.name %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="build/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= image_url 'favicon/favicon-32x32.png' %>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= image_url 'favicon/favicon-16x16.png' %>">
+    <link rel="manifest" href="<%= asset_url 'favicon/site.webmanifest' %>">
+    <link rel="mask-icon" href="<%= image_url 'favicon/safari-pinned-tab.svg' %>" color="#000000">
+    <link rel="shortcut icon" href="<%= image_url 'favicon/favicon.ico' %>">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="<%= asset_url 'favicon/browserconfig.xml' %>">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>spritePath="<%= image_url('symbol/icons.svg') %>"</script>
+  </head>
+  <body>
+    <div style="position: absolute; right: 100%; height: 0px; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+          <symbol fill="none" viewBox="0 0 46 46" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38.333 23H7.667m11.5 11.5L7.667 23l11.5-11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </symbol>
+          <symbol fill="none" viewBox="0 0 46 46" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.667 23h30.666m-11.5-11.5l11.5 11.5-11.5 11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </symbol>
+          <symbol viewBox="0 0 16 16" id="icon-times" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M15.924 1.537L14.514.118 8.005 6.586 1.537.076.118 1.485l6.468 6.51-6.51 6.468 1.409 1.418 6.51-6.467 6.468 6.51 1.418-1.41-6.467-6.509z"></path>
+          </symbol>
+          <symbol fill="none" viewBox="0 0 35 34" id="icon-x" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.672 17L.586 31.086l2.828 2.828L17.5 19.828l14.086 14.086 2.828-2.828L20.328 17 33.914 3.414 31.086.586 17.5 14.172 3.914.586 1.086 3.414 14.672 17z" fill="currentColor"></path>
+          </symbol>
+      </svg>
+    </div>
+
+    <%= render 'default/shared/header' %>
+    <%= yield %>
+    <%= render 'default/shared/footer' %>
+
+    <script src="/scripts.js?v=2"></script>
+  </body>
+</html>
