@@ -22,42 +22,31 @@
 
     </article>
   </section>
+
   <section class="journal-section">
     <article class="container" role="article">
       <h2 data-aos="fade-right" class="title title--md journal-section__title">
         Read another
       </h2>
       <div data-aos="fade-up" class="journal-section__slider">
-        <a href="/journal" class="journal-item journal-item--hero">
-          <div class="journal-item__image">
-            <img src="build/img/journal-1.jpg" alt="">
-            <div class="view">View</div>
-          </div>
-          <div class="journal-item__bottom">
-            <p class="text">This is perex of my article in my journal. Lorem ipsum dolor sit amet consectetuer elit unt muerte vega. sic vic pacem parabelum...</p>
-            <div class="journal-item__date">03/02</div>
-          </div>
-        </a>
-        <a href="/journal" class="journal-item">
-          <div class="journal-item__image">
-            <img src="build/img/journal-2.jpg" alt="">
-            <div class="view">View</div>
-          </div>
-          <div class="journal-item__bottom">
-            <p class="text">This is perex of my article in my journal. Lorem ipsum dolor sit amet consectetuer elit unt muerte vega. sic vic pacem parabelum...</p>
-            <div class="journal-item__date">03/02</div>
-          </div>
-        </a>
-        <a href="/journal" class="journal-item">
-          <div class="journal-item__image">
-            <img src="build/img/journal-3.jpg" alt="">
-            <div class="view">View</div>
-          </div>
-          <div class="journal-item__bottom">
-            <p class="text">This is perex of my article in my journal. Lorem ipsum dolor sit amet consectetuer elit unt muerte vega. sic vic pacem parabelum...</p>
-            <div class="journal-item__date">03/02</div>
-          </div>
-        </a>
+        <% journal_items = Spina::Resource.find_by(name: :journal_items).pages.live.where.not(id: current_page.id) %>
+
+        <% journal_items.each do |journal_item| %>
+          <a href="<%= journal_item.materialized_path %>" class="journal-item <%= journal_item.id == journal_items.first.id ? 'journal-item--hero' : '' %>">
+
+            <div class="journal-item__image">
+              <%= image_tag original_url(journal_item.content(:journal_image).spina_image) %>
+              <div class="view">View</div>
+            </div>
+
+            <div class="journal-item__bottom">
+              <p class="text">
+                <%= strip_tags(journal_item.content(:journal_preview_description)).truncate(135) %>
+              </p>
+              <div class="journal-item__date"><%= l journal_item.created_at, format: "%d\/%m" %></div>
+            </div>
+          </a>
+        <% end %>
       </div>
     </article>
   </section>
