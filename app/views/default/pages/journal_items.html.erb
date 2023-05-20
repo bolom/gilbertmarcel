@@ -35,7 +35,9 @@
           <a href="<%= journal_item.materialized_path %>" class="journal-item <%= journal_item.id == journal_items.first.id ? 'journal-item--hero' : '' %>">
 
             <div class="journal-item__image">
-              <%= image_tag original_url(journal_item.content(:journal_image).spina_image) %>
+              <% if journal_item.content(:journal_image).present? %>
+                <%= image_tag journal_item.content(:journal_image) %>
+              <% end %>
               <div class="view">View</div>
             </div>
 
