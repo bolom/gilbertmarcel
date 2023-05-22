@@ -1,3 +1,20 @@
+<a href="#" target="_blank" class="click-to-see">
+  <div class="click-to-see__top">
+    <div class="click-to-see__scroll">
+      <span class="title title--lg">Click here to see my instagram</span>
+      <span class="title title--lg">Click here to see my instagram</span>
+      <span class="title title--lg">Click here to see my instagram</span>
+    </div>
+  </div>
+  <div class="click-to-see__bottom">
+    <div class="click-to-see__scroll click-to-see__scroll--reverse">
+      <span class="title title--lg">Click here to see my instagram</span>
+      <span class="title title--lg">Click here to see my instagram</span>
+      <span class="title title--lg">Click here to see my instagram</span>
+    </div>
+  </div>
+</a>
+
 <footer class="footer" role="contentinfo">
   <div class="container container--lg">
     <a href="/" class="logo">
@@ -10,8 +27,8 @@
         </div>
         <div class="info__block">
           <p class="perex">
-            <a class="text-link" href="mailto:gilbert@marcel.com">gilbert@marcel.com</a><br>
-            <a class="text-link" href="tel:+44605884432">+44 605 884 432</a>
+            <a class="text-link" href="mailto:<%= current_account.email %>"><%= current_account.email %></a><br>
+            <a class="text-link" href="tel:<%= current_account.phone %>"><%= current_account.phone %></a>
           </p>
         </div>
       </div>

@@ -2266,7 +2266,7 @@ input[type=radio] {
   color: #202124;
   font-size: 16px;
   text-decoration: none;
-  background: url("../img/back.svg") no-repeat left center;
+  background: url("back.svg") no-repeat left center;
   background-size: 16px;
 }
 @media (min-width: 768px) {
@@ -3426,7 +3426,7 @@ a.journal-item--hero .journal-item__date {
   left: 0;
   width: 24px;
   height: 23px;
-  background: url("../img/icons/icon-x.svg") no-repeat center center;
+  background: url("icons/icon-x.svg") no-repeat center center;
   background-size: contain;
   transform: translate(0, -50%);
 }
@@ -3614,4 +3614,3 @@ a.view {
     margin: 0 !important;
   }
 }
-/*# sourceMappingURL=styles.css.map */
