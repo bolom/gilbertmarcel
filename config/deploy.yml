@@ -1,0 +1,11 @@
+service: gilbertmarcel
+image: bolom/gilbertmarcel
+servers:
+  - 146.190.74.132
+registry:
+  username: bolom
+  password:
+    - MRSK_REGISTRY_PASSWORD
+env:
+  secret:
+    - RAILS_MASTER_KEY

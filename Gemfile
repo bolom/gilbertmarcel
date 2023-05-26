@@ -9,6 +9,7 @@ gem "sprockets-rails"
 gem "pg", "~> 1.1"
 
 gem "spina"
+gem "mrsk"
 
 gem "puma", "~> 5.0"
 gem "importmap-rails"
