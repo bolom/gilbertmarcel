@@ -8,4 +8,4 @@ registry:
     - MRSK_REGISTRY_PASSWORD
 env:
   secret:
-    -  ${{ secrets.RAILS_MASTER_KEY }}
+    -  RAILS_MASTER_KEY
