@@ -23,6 +23,11 @@ jobs:
         gem install bundler
         bundle install --jobs 4 --retry 3
 
+    - name: Configure SSH
+      uses: webfactory/ssh-agent@v0.5.2
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
     - name: Build and deploy
       run: |
         mrsk deploy
