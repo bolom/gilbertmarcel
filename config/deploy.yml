@@ -3,9 +3,9 @@ image: bolom/gilbertmarcel
 servers:
   - 146.190.74.132
 registry:
-  username: bolom
+  username: bolomichelin
   password:
     - MRSK_REGISTRY_PASSWORD
 env:
   secret:
-    - RAILS_MASTER_KEY
+    -  RAILS_MASTER_KEY
