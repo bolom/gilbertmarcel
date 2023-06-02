@@ -1,5 +1,5 @@
 service: gilbertmarcel
-image: bolom/gilbertmarcel
+image: bolomichelin/gilbertmarcel
 servers:
   - 146.190.74.132
 registry:
