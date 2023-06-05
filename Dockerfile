@@ -7,6 +7,8 @@ RUN mkdir -p $RAILS_ROOT
 
 WORKDIR /$RAILS_ROOT
 
+RUN mkdir -p tmp/pids
+
 # Setting env up
 ARG RAILS_ENV
 ENV RAILS_ENV=$RAILS_ENV

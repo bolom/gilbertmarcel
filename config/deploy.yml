@@ -9,3 +9,6 @@ registry:
 env:
   secret:
     -  RAILS_MASTER_KEY
+healthcheck:
+  max_attempts: 3
+  cmd: ./bin/check_health
