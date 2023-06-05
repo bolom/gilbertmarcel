@@ -56,10 +56,12 @@
         <div data-aos="fade-left" class="gallery__wrap">
           <div class="gallery__slider">
             <% Spina::Page.live.where(view_template: :art_gallery_items).each do |art_gallery_item| %>
-              <a href="<%= image_url art_gallery_item.content.attachment_url(:image) %>" class="gallery__slider-item">
-                <%= image_tag art_gallery_item.content.attachment_url(:image), title: strip_tags(art_gallery_item.content(:description)) %>
-                <div class="view">View</div>
-              </a>
+              <% if art_gallery_item.content.attachment_url(:image).present? %>
+                <a href="<%= image_url art_gallery_item.content.attachment_url(:image) %>" class="gallery__slider-item">
+                  <%= image_tag art_gallery_item.content.attachment_url(:image), title: strip_tags(art_gallery_item.content(:description)) %>
+                  <div class="view">View</div>
+                </a>
+              <% end %>
             <% end %>
           </div>
 
@@ -84,7 +86,7 @@
       <div class="indent">
         <% art_big_picture = Spina::Page.live.find_by(view_template: :art_big_picture) %>
 
-        <% if art_big_picture.present? %>
+        <% if art_big_picture.present? && art_big_picture.content.attachment_url(:art_image).present? %>
           <a data-aos="fade-up" href="<%= art_big_picture.content.attachment_url(:art_image) %>" class="portfolio-item portfolio-item--hero">
             <div class="portfolio-item__image">
               <%= image_tag art_big_picture.content.attachment_url(:art_image), width: 1003, loading: 'lazy', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>

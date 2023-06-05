@@ -5,6 +5,9 @@ services:
       - ./tmp/db:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: gilbertmarcel
+    ports:
+      - "5432:5432"
+
   app:
     build:
       context: .
