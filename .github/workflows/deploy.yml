@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         gem install bundler
-        bundle install --jobs 4 --retry 3
+        gem install mrsk
 
     - name: Configure SSH
       uses: webfactory/ssh-agent@v0.5.2
@@ -33,4 +33,5 @@ jobs:
         MRSK_REGISTRY_PASSWORD: ${{ secrets.MRSK_REGISTRY_PASSWORD }}
         RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
       run: |
+        mrsk lock release
         mrsk deploy
