@@ -1,0 +1,14 @@
+service: gilbertmarcel
+image: bolomichelin/gilbertmarcel
+servers:
+  - 146.190.74.132
+registry:
+  username: bolomichelin
+  password:
+    - MRSK_REGISTRY_PASSWORD
+env:
+  secret:
+    -  RAILS_MASTER_KEY
+healthcheck:
+  max_attempts: 3
+  cmd: ./bin/check_health

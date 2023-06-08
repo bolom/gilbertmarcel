@@ -20,7 +20,7 @@ rails spina:first_deploy
 And using admin credentials from the previous step sign in via this URL [http://localhost:3000/admin/login](http://localhost:3000/admin/login)
 
 ## How to edit
-⚠️⚠️⚠️ The root page will not work without the fulfillment of pages in admin area
+⚠️⚠️⚠️ The root page will not work without the fulfillment of pages in admin area.
 
 - Contact information and site name are editable via general settings
 [http://localhost:3000/admin/account/edit](http://localhost:3000/admin/account/edit)
