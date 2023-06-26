@@ -3,7 +3,7 @@ Spina.configure do |config|
   # ===============
   # All locales your content should be available in.
   # Defaults to I18n.default_locale
-  # config.locales = [:en, :nl]
+  config.locales = [:fr]
 
   # Backend path
   # ===============
@@ -26,7 +26,7 @@ Spina.configure do |config|
   # ===============
   # Images that are inserted in rich text fields are resized automatically.
   # You can define your desired dimensions here.
-  # config.embedded_image_size = [2000, 2000]
+   config.embedded_image_size = [500, 500]
 
   # Thumbnail image size
   # ===============
