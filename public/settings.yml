@@ -1,0 +1,45 @@
+web:
+  port: 8000
+  public_url: "http://localhost:8000"
+
+database:
+  url: "postgresql://citta@db/citta"
+
+google:
+  oauth_client_id: ""
+  oauth_client_secret: ""
+
+slack:
+  host: "slack.com"
+  app_token: ""
+  oauth2_client_id: ""
+  oauth2_client_secret: ""
+  authorization_endpoint: "https://slack.com/oauth/v2/authorize"
+  token_endpoint: "https://slack.com/api/oauth.v2.access"
+  redirect_uri: "https://localhost:8001/oauth/slack/callback"
+  slash_command_name: "citta"
+  slash_command_token: ""
+  incoming_webhook_url: ""
+  admin_username: ""
+  admin_id: ""
+  team_id: ""
+  info_op_channel_id: ""
+  info_op_channel_name: ""
+  support_channel_id: ""
+  support_channel_name: ""
+  admin_channel_id: ""
+  admin_channel_name: ""
+
+brium:
+  origin: "https://brium.me"
+  oauth2_client_id: ""
+  oauth2_client_secret: ""
+  authorization_endpoint: "https://brium.me/oauth2/authorize"
+  token_endpoint: "https://brium.me/oauth2/token"
+  redirect_uri: "http://localhost:8000/oauth/brium/callback"
+
+currency_layer:
+  api_key: ""
+
+api_layer:
+  api_key: ""
