@@ -1,10 +1,10 @@
 module.exports = {
   content: [
-    '/Users/bolo/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/spina-2.15.0/app/views/**/*.*',
-'/Users/bolo/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/spina-2.15.0/app/components/**/*.*',
-'/Users/bolo/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/spina-2.15.0/app/helpers/**/*.*',
-'/Users/bolo/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/spina-2.15.0/app/assets/javascripts/**/*.js',
-'/Users/bolo/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/spina-2.15.0/app/**/application.tailwind.css'
+    '/Users/cantacuzene/.rvm/gems/ruby-3.0.2/gems/spina-2.15.0/app/views/**/*.*',
+'/Users/cantacuzene/.rvm/gems/ruby-3.0.2/gems/spina-2.15.0/app/components/**/*.*',
+'/Users/cantacuzene/.rvm/gems/ruby-3.0.2/gems/spina-2.15.0/app/helpers/**/*.*',
+'/Users/cantacuzene/.rvm/gems/ruby-3.0.2/gems/spina-2.15.0/app/assets/javascripts/**/*.js',
+'/Users/cantacuzene/.rvm/gems/ruby-3.0.2/gems/spina-2.15.0/app/**/application.tailwind.css'
   ],
   theme: {
     fontFamily: {

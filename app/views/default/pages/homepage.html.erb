@@ -89,7 +89,8 @@
         <% if art_big_picture.present? && art_big_picture.content.attachment_url(:art_image).present? %>
           <a data-aos="fade-up" href="<%= art_big_picture.content.attachment_url(:art_image) %>" class="portfolio-item portfolio-item--hero">
             <div class="portfolio-item__image">
-              <%= image_tag art_big_picture.content.attachment_url(:art_image), width: 1003, loading: 'lazy', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %>
+              <%= image_tag art_big_picture.content.attachment_url(:art_image), width: 1003, loading: 'lazy', title: strip_tags(art_big_picture.content(:description)) %>
+          <!--    < %= image_tag art_big_picture.content.attachment_url(:art_image), width: 1003, loading: 'lazy', title: 'The picture features a vibrant blue parrot perched on a tropical tree branch, surrounded by lush green foliage that accentuates its striking plumage.' %> -->
               <div class="view">View</div>
             </div>
             <div class="portfolio-item__text portfolio-item__text--animation">
@@ -137,4 +138,3 @@
     </article>
   </section>
 </main>
-
